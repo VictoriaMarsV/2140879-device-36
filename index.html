@@ -3,10 +3,66 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="wrapper-body-index">
+<header class="page-content">
+<div class = header-logo>
+  <img src="/images/header/logo-mini.svg" alt="Логотип интернет-магазина «Девайс»." width="145" height="36">
+</div>
+<nav class="navigation">
+  <!--Форма поиска по сайту-->
+  <div class="navigation-user">
+  <form class="search-forms" action="https://echo.htmlacademy.ru/" method="post">
+    <div class="search-wrapper">
+      <div class="outline-wrapper">
+        <input class="search-input" id="main-search" placeholder="Поиск по сайту" type="search" name="main-search" required>
+        <label class="main-search" for="main-search">
+          <span class="visually-hidden">Поиск по сайту.</span>
+        </label>
+      </div>
+      <button class="search-submit" type="submit">Найти</button>
+    </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  </form>
+  <!--Войти Корзина-->
+  <ul class="navigation-user-list list">
+    <li class="navigation-user-item">
+        <a class="navigation-link header-login-wrapper" href="#">Войти</a>
+    </li>
+    <div class="navigation-user-wrapper">
+    <li class="navigation-user-item">
+     <a class="navigation-link navigation-link-user link-shape header-compare" href="#">Сравнить</a>
+    </li>
+    <li class="navigation-user-item">
+      <a class="navigation-link" href="#" data-counter="2">Корзина</a>
+      </li>
+    </div>
+  </ul>
 
+</div>
+<!--Каталог товаров-->
+      <div class="navigation-catalog">
+        <button class="button navigation-catalog-button" type="button">Каталог товаров
+          <span class="sub-catalog-open-icon"></span>
+        </button>
+        <ul class="navigation-list list">
+          <li class="navigation-item">
+           <a class="link navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="link navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-item ">
+            <a class="navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+</nav>
+
+</header>
+
+</div>
   </body>
 </html>
